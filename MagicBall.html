@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic Ball</title>
+	<meta charset="utf-8" />
+    <link href="styles/magicBallStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <a class="DivBack" href="school.html">Go Back</a>
+    <div id="wrapper">
+	<div class="circle">
+	<input type="text" id="TBMessage" readonly />
+	</div>
+	    <h1>Press the button to see your Magic 8 Ball saying</h1>
+        <br />
+        <input type="button" id="BtnGetMessage" value="Shake Ball" onclick="getMessage()" />
+        <input type="button" id="BtnclearMessage" value="Clear Message" onclick="clearMessage()"/>
+    </div>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/magicBall.js"></script>
+</body>
+</html>
