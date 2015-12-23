@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Referral system</title>
+    <link href="styles/referralFormStyles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="styles/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="styles/jquery-ui.theme.min.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body>
+    <a class="DivBack" href="school.html">Go Back</a>
+    <div id="wrapper">
+        <div id="test"></div>
+        <div id="DivSuccessMessage">
+            <p>Your record has been saved. Thank you!</p>
+        </div>
+        <!--first div-->
+        <div id="DivOne">
+            <div id="top-nav">
+                <input type="button" value="Create a Referral" id="BtnCreateRef" />
+                <input type="button" value="View All Referrals" id="BtnViewRef" />
+            </div>
+        </div>
+        <!--first div-->
+        <!--second div-->
+        <div id="DivTwo">
+            <form id="RefForm">
+                <h1>Referral Entry Form</h1>
+                <p class="warning">Please make sure you entered information in all fields</p>
+                <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName"/><div class="error">*</div><br />
+                <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName"/><div class="error">*</div><br />
+                <label for="Phone"> Telephone Number:</label>
+                    <input type="tel" id="phone" /><div class="error">*</div><br />
+                <label for="birth">Date of Birth:</label>
+                    <input type="text" id="dateBirth" /> <div class="error">*</div><br />
+                <label>Gender:</label>
+                 M <input type="radio" name="RGSex" id="RBMale" value="Male" /> F<input type="radio" name="RGSex" id="RBFemale" value="Female" /><div class="error">*</div><br />
+                <label for="dateAppointment">Date of appointment:</label>
+                     <input type="text" id="dateAppointment" /><div class="error">*</div><br />
+                <label for="DDAppointment">Appointment type: </label>
+                <select id="DDAppointment">
+                    <option>Select appointment type</option>
+                    <option>consultation</option>
+                    <option>physical</option>
+                    <option>office visit</option>
+                    <option>treatment</option>
+                    <option>follow‐up</option>
+                </select><div class="error">*</div><br /><br />
+                <button type="button" class="BtnForm" id="BtnSave">Save</button>
+                <button type="reset" class="BtnForm" id="BtnReset">Clear</button>
+            </form>
+        </div>
+        <!--second div-->
+        <!--third div-->
+       <div id="DivThree">
+           <h1>Referral History</h1>
+           <div id="DivCategories">
+               <label>Appointment Date: </label>
+               <input type="text" id="dateAppointmentBottom" /><br />
+               <label> Appointment type: </label>
+               <select id="DDAppType">
+                   <option>Select appointment type</option>
+                   <option value="consultation">consultation</option>
+                   <option value="physical">physical</option>
+                   <option value="office visit">office visit</option>
+                   <option value="treatment">treatment</option>
+                   <option value="follow-up">follow‐up</option>
+               </select><br /><br />
+               <!--third div-->
+               <button id="BtnGetApp">Get Appointments</button>
+           </div>
+           <div id="DivShowArea"></div>
+       </div>
+    </div>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/referralFormScripts.js"></script>
+    
+</body>
+</html>
